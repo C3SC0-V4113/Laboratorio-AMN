@@ -17,7 +17,7 @@ B=[
     ];
 if rank(A)==3
     fprintf('Corriente de malla \n');
-    i=A\B;
+    i=A\B
 else
     fprintf('No existe una solución única');
 end
