@@ -5,11 +5,11 @@
 clc
 vo=input('Introduzca la velocidad inicial en mts/seg v0 = ');
 theta=input('Introduzca el ángulo inicial en grados, theta0 = ');
-theta0=theta*pi/180;
-tf=2*vo*sin(theta0)/9.81;
-t=0:tf/1000:tf;
-x=vo*cos(theta0)*t;
-y=vo*sin(theta0)*t-0.5*9.81*t.^2;
+theta0=theta*pi/180; %Convierte de grados a radianes
+tf=2*vo*sin(theta0)/9.81; %Tiempo final
+t=0:tf/1000:tf; %Vector de datos desde cero hasta tiempo final en secciones de 1000
+x=vo*cos(theta0)*t; %Formula de alcance
+y=vo*sin(theta0)*t-0.5*9.81*t.^2; %Formula de tiro vertical
 hmax=max(y);
 rmax=max(x);
 fprintf('\n');
