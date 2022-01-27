@@ -1,7 +1,7 @@
-%Aplicación en circuitos eléctricos
-%Este guión o programa lee valores de resistencia y voltaje
+%AplicaciÃ³n en circuitos elÃ©ctricos
+%Este guiÃ³n o programa lee valores de resistencia y voltaje
 %y calcula las corrientes de malla correspondiente para
-%un circuito eléctrico específico
+%un circuito elÃ©ctrico especÃ­fico
 clc
 R=input('Introduzca los valores de resistencia en ohms, [R1...R5]= ');
 V=input('Introduzca los valores de volatje en volts, [V1...V2]= ');
@@ -13,11 +13,11 @@ A=[
     0,-R(4),R(4)+R(5)
     ];
 B=[
-    V(1);0;-V(2)
+    V(1);0;-V(2) %Es una mariz columna, por eso se separa por punto y coma
     ];
 if rank(A)==3
     fprintf('Corriente de malla \n');
-    i=A\B
+    i=A\B %X=A'*B
 else
-    fprintf('No existe una solución única');
+    fprintf('No existe una soluciÃ³n Ãºnica');
 end
