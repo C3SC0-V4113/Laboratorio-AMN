@@ -2,7 +2,7 @@ function F=secante3(po,p1,r,Re,delta)
 disp('Método de la secante')
 syms f
 g=input('Introduzca la función g: ');
-pk=p1-subs(g,p1)*(p1-po)/subs(g,p1)-subs(g,po);
+pk=p1-subs(g,p1)*(p1-po)/(subs(g,p1)-subs(g,po));
 cont=1;
 tol=abs(pk-p1);
 disp(' n    po    p1    f    error')
