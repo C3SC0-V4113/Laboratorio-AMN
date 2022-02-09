@@ -2,7 +2,7 @@ clc
 clear all
 syms x
 %2 valores cualquier cerca de la raíz(graficas secantes acordate)
-disp('Ejercicio 2')
+disp('Ejercicio 2 Por Newton')
 %Entrada de datos%
 xo=input('Introduzca el valor inicial xo: ');
 %po = input('Introduzca el valor inicial (po): ');
